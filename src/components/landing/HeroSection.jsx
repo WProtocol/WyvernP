@@ -58,31 +58,27 @@ export function HeroSection({ prices, onWatchDemo }) {
             fontFamily: "'Instrument Serif', serif",
             fontStyle: "italic",
             fontWeight: 400,
-            fontSize: "clamp(60px, 6.4vw, 104px)",
-            lineHeight: 0.97,
+            fontSize: "clamp(60px, 6.4vw, 116px)",
+            lineHeight: 0.96,
             letterSpacing: "-0.025em",
             marginBottom: 28,
             animationDelay: "80ms",
             color: C.text,
           }}
         >
-          We ended <span className="gradient-text">T+2.</span>
-          <br />
-          <span style={{ fontFamily: "'Syne', sans-serif", fontStyle: "normal", fontWeight: 800, fontSize: "0.62em", letterSpacing: "-0.03em", textTransform: "uppercase", color: C.text, display: "inline-block", marginTop: 18 }}>
-            The clearing house is dead.
-          </span>
+          Burn the<br /><span className="gradient-text">clearinghouse.</span>
         </h1>
-        <p className="fade-up" style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 17, lineHeight: 1.7, color: C.muted, fontWeight: 300, maxWidth: 480, marginBottom: 48, animationDelay: "160ms" }}>
-          Stocks, bonds, and real-world assets — settled atomically on Solana in under 400 milliseconds. No broker. No counterparty. No waiting.
+        <p className="fade-up" style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 18, lineHeight: 1.65, color: C.muted, fontWeight: 300, maxWidth: 500, marginBottom: 48, animationDelay: "160ms" }}>
+          $WYV is a memecoin for everyone who thinks T+2 is theft, banks are slow, and finance should belong to the people who actually use it. The dragon flies on Solana.
         </p>
-        <div className="fade-up" style={{ display: "flex", gap: 12, alignItems: "center", animationDelay: "240ms" }}>
-          <button className="btn-gradient" onClick={() => navigate("/app")} style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 14, fontWeight: 600, padding: "14px 28px", borderRadius: 10, border: "none", cursor: "pointer", display: "inline-flex", alignItems: "center", gap: 8, color: "#fff" }}>
-            Start trading <ArrowRight size={16}/>
-          </button>
+        <div className="fade-up" style={{ display: "flex", gap: 12, alignItems: "center", animationDelay: "240ms", flexWrap: "wrap" }}>
+          <a href="https://t.me/+GiUlx2KOi9QwMzU0" target="_blank" rel="noopener noreferrer" className="btn-gradient" style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 14, fontWeight: 600, padding: "14px 28px", borderRadius: 10, border: "none", cursor: "pointer", display: "inline-flex", alignItems: "center", gap: 8, color: "#fff", textDecoration: "none" }}>
+            Join the dragons <ArrowRight size={16}/>
+          </a>
           <button onClick={onWatchDemo} style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 14, fontWeight: 400, color: C.muted, background: "transparent", border: `1px solid ${C.border}`, borderRadius: 10, padding: "14px 24px", cursor: "pointer", display: "inline-flex", alignItems: "center", gap: 8, transition: "all 0.2s" }}
             onMouseEnter={e => { e.currentTarget.style.borderColor = C.borderHi; e.currentTarget.style.color = C.text; }}
             onMouseLeave={e => { e.currentTarget.style.borderColor = C.border; e.currentTarget.style.color = C.muted; }}>
-            <Play size={14}/> Watch demo
+            <Play size={14}/> Watch the lore
           </button>
         </div>
         <div className="fade-up" style={{ display: "flex", gap: 32, marginTop: 56, animationDelay: "320ms" }}>

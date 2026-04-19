@@ -21,7 +21,7 @@ export function Nav({ onSignIn }) {
         <span style={{ fontFamily: "'Syne',sans-serif", fontSize: 15, fontWeight: 700, letterSpacing: "0.05em", textTransform: "uppercase", color: C.text }}>Wyvern</span>
       </a>
       <div style={{ display: "flex", gap: 4 }}>
-        {[["Protocol", "#protocol"], ["Features", "#features"], ["Markets", "/markets"], ["Manifesto", "/manifesto"]].map(([label, href]) => (
+        {[["Lore", "#lore"], ["Tokenomics", "#tokenomics"], ["Community", "#community"], ["Manifesto", "/manifesto"]].map(([label, href]) => (
           <a key={label} href={href.startsWith("#") ? href : undefined}
             onClick={href.startsWith("/") ? e => { e.preventDefault(); navigate(href); } : undefined}
             style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 13, color: C.muted, textDecoration: "none", padding: "8px 16px", borderRadius: 8, transition: "color 0.2s", cursor: "pointer" }}
@@ -44,9 +44,30 @@ export function Nav({ onSignIn }) {
             <Wallet size={14}/>Sign in
           </button>
         )}
-        <button className="btn-gradient" onClick={() => navigate("/app")} style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 12, fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", padding: "10px 22px", borderRadius: 8, border: "none", cursor: "pointer", display: "flex", alignItems: "center", gap: 6, color: "#fff" }}>
-          Launch app <ArrowRight size={13}/>
-        </button>
+        <a
+          href="https://t.me/+GiUlx2KOi9QwMzU0"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-gradient"
+          style={{
+            fontFamily: "'DM Sans',sans-serif",
+            fontSize: 12,
+            fontWeight: 600,
+            letterSpacing: "0.08em",
+            textTransform: "uppercase",
+            padding: "10px 22px",
+            borderRadius: 8,
+            border: "none",
+            cursor: "pointer",
+            display: "flex",
+            alignItems: "center",
+            gap: 6,
+            color: "#fff",
+            textDecoration: "none",
+          }}
+        >
+          Join the dragons <ArrowRight size={13}/>
+        </a>
       </div>
     </nav>
   );

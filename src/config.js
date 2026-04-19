@@ -18,9 +18,10 @@ export const TOKEN = {
 };
 
 export const SOCIALS = {
-  twitter: "https://x.com/WyvernProtocoI",
-  github:  "https://github.com/WProtocol/WyvernP",
-  docs:    "/docs",
+  twitter:  "https://x.com/WyvernProtocoI",
+  github:   "https://github.com/WProtocol/WyvernP",
+  telegram: "https://t.me/+GiUlx2KOi9QwMzU0",
+  docs:     "/docs",
 };
 
 /* Finnhub API key for live stock prices. Free tier: https://finnhub.io

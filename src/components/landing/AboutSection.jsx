@@ -4,11 +4,10 @@ import { SOCIALS } from "../../config";
 import { SLabel, H2 } from "./shared";
 
 const FACTS = [
-  { label: "Founded", value: "2026", sub: "Built by capital markets & DeFi veterans" },
-  { label: "Network", value: "Solana", sub: "Native to the fastest L1 blockchain" },
-  { label: "Compliance", value: "MiCA Ready", sub: "EU-compliant from day one" },
-  { label: "Settlement", value: "Atomic DvP", sub: "Delivery vs Payment — zero counterparty risk" },
-  { label: "Status", value: "Public Testnet", sub: "Mainnet launch scheduled Q4 2026" },
+  { label: "Symbol",     value: "$WYV",       sub: "On Solana via pump.fun" },
+  { label: "Mascot",     value: "Wyvern",     sub: "Two-legged dragon. Older than fiat." },
+  { label: "Network",    value: "Solana",     sub: "The fastest creature on the fastest chain." },
+  { label: "Status",     value: "Pre-launch", sub: "Watch the manifesto. Then watch the chart." },
 ];
 
 export function AboutSection() {
@@ -16,23 +15,26 @@ export function AboutSection() {
     <section id="about" style={{ padding: "120px 48px", borderBottom: `1px solid ${C.border}`, background: C.bg2 }}>
       <div style={{ maxWidth: 1200, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "start" }}>
         <div>
-          <SLabel num="08">The thesis</SLabel>
-          <H2>Built to <span className="gradient-text">redefine</span><br/>capital markets.</H2>
-          <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 15, lineHeight: 1.9, color: C.muted, marginBottom: 24 }}>
-            Wyvern Protocol is a decentralized infrastructure layer for tokenizing and trading real-world securities on Solana. We believe that any asset — from Apple stock to US Treasury bonds to private equity — should be tradeable by anyone, anywhere, without intermediaries.
+          <SLabel num="04">The thesis</SLabel>
+          <H2>Why a <span className="gradient-text">dragon coin?</span></H2>
+          <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 16, lineHeight: 1.85, color: C.muted, marginBottom: 24 }}>
+            Capital markets are the most trust-dependent industry on earth — and they still settle in two days.
+            $WYV doesn't fix that. We're not pretending to. We're a memecoin for the people who watched their grandfather wait
+            two days for a stock trade to settle and decided that was funny enough to make a dragon out of.
           </p>
-          <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 15, lineHeight: 1.9, color: C.muted, marginBottom: 40 }}>
-            Traditional capital markets operate on infrastructure built in the 1970s. T+2 settlement, restricted market hours, geographic gatekeeping, and opaque custody chains are not features — they're bugs. Wyvern fixes them at the protocol layer.
+          <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 16, lineHeight: 1.85, color: C.muted, marginBottom: 40 }}>
+            The dragon is the meme. The community is the protocol. The chart is the proof.
+            Read <a href="/manifesto" style={{ color: C.violet, textDecoration: "underline", textDecorationStyle: "dotted" }}>the manifesto</a> if you want the long version.
           </p>
-          <div style={{ display: "flex", gap: 12 }}>
+          <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
             <a href={SOCIALS.twitter} target="_blank" rel="noopener noreferrer" className="btn-gradient"
               style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "12px 20px", borderRadius: 8, textDecoration: "none", fontFamily: "'DM Sans',sans-serif", fontSize: 13, fontWeight: 600, color: "#fff" }}>
-              <X size={14}/> Follow us
+              <X size={14}/> Follow the dragon
             </a>
-            <a href={SOCIALS.docs} style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "12px 20px", borderRadius: 8, border: `1px solid ${C.border}`, textDecoration: "none", fontFamily: "'DM Sans',sans-serif", fontSize: 13, color: C.muted, transition: "all 0.2s" }}
+            <a href="/manifesto" style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "12px 20px", borderRadius: 8, border: `1px solid ${C.border}`, textDecoration: "none", fontFamily: "'DM Sans',sans-serif", fontSize: 13, color: C.muted, transition: "all 0.2s" }}
               onMouseEnter={e => { e.currentTarget.style.borderColor = C.borderHi; e.currentTarget.style.color = C.text; }}
               onMouseLeave={e => { e.currentTarget.style.borderColor = C.border; e.currentTarget.style.color = C.muted; }}>
-              <FileText size={14}/> Read docs
+              <FileText size={14}/> Read the manifesto
             </a>
           </div>
         </div>
@@ -42,8 +44,8 @@ export function AboutSection() {
               onMouseEnter={e => e.currentTarget.style.borderColor = C.borderHi}
               onMouseLeave={e => e.currentTarget.style.borderColor = C.border}>
               <div>
-                <div style={{ fontFamily: "monospace", fontSize: 10, letterSpacing: "0.1em", textTransform: "uppercase", color: C.dim, marginBottom: 4 }}>{label}</div>
-                <div style={{ fontFamily: "'Syne',sans-serif", fontSize: 16, fontWeight: 700, color: C.text }}>{value}</div>
+                <div style={{ fontFamily: "monospace", fontSize: 10, letterSpacing: "0.18em", textTransform: "uppercase", color: C.dim, marginBottom: 4 }}>{label}</div>
+                <div style={{ fontFamily: "'Instrument Serif', serif", fontStyle: "italic", fontSize: 24, color: C.text, letterSpacing: "-0.01em" }}>{value}</div>
               </div>
               <div style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 12, color: C.muted, textAlign: "right", maxWidth: 200 }}>{sub}</div>
             </div>

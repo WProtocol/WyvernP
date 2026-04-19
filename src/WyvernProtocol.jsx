@@ -9,19 +9,11 @@ import { WalletModal } from "./components/landing/WalletModal";
 import { WatchDemoModal } from "./components/landing/WatchDemoModal";
 import { HeroSection } from "./components/landing/HeroSection";
 import { TickerBar } from "./components/landing/TickerBar";
-import { ProtocolSection } from "./components/landing/ProtocolSection";
-import { SettlementSection } from "./components/landing/SettlementSection";
-import { FeaturesSection } from "./components/landing/FeaturesSection";
-import { SecurityTypesSection } from "./components/landing/SecurityTypesSection";
+import { LoreSection } from "./components/landing/LoreSection";
+import { TokenomicsSection } from "./components/landing/TokenomicsSection";
+import { CommunitySection } from "./components/landing/CommunitySection";
 import { StatsSection } from "./components/landing/StatsSection";
-import { AccessTiersSection } from "./components/landing/AccessTiersSection";
-import { RoadmapSection } from "./components/landing/RoadmapSection";
-import { TrustSection } from "./components/landing/TrustSection";
 import { AboutSection } from "./components/landing/AboutSection";
-import { TeamSection } from "./components/landing/TeamSection";
-import { CompareSection } from "./components/landing/CompareSection";
-import { DashboardPreview } from "./components/landing/DashboardPreview";
-import { MainnetTerminal } from "./components/landing/MainnetTerminal";
 import { CTASection } from "./components/landing/CTASection";
 import { Footer } from "./components/landing/Footer";
 import { PullQuote } from "./components/landing/shared";
@@ -40,25 +32,14 @@ export default function WyvernProtocol() {
       {demoOpen && <WatchDemoModal onClose={() => setDemoOpen(false)}/>}
       <HeroSection prices={prices} onWatchDemo={() => setDemoOpen(true)}/>
       <TickerBar prices={prices}/>
-      <ProtocolSection/>
-      <PullQuote attribution="The thesis">
-        Liquidity, <em>finally</em>, untethered.
+      <LoreSection/>
+      <PullQuote attribution="The dragon awakens">
+        T+2 is theft. Banks are slow. <em>Finance</em> belongs to the dragons.
       </PullQuote>
-      <SettlementSection/>
-      <FeaturesSection/>
-      <SecurityTypesSection/>
-      <DashboardPreview/>
-      <CompareSection/>
-      <PullQuote attribution="What capital markets should be">
-        Trade any asset, anywhere — and have it <em>settle</em> before you've put down the phone.
-      </PullQuote>
-      <MainnetTerminal/>
+      <TokenomicsSection/>
       <StatsSection/>
-      <AccessTiersSection/>
-      <RoadmapSection/>
-      <TrustSection/>
+      <CommunitySection/>
       <AboutSection/>
-      <TeamSection/>
       <CTASection/>
       <Footer/>
     </div>
