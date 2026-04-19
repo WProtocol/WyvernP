@@ -8,7 +8,7 @@ export function SecurityTypesSection() {
   return (
     <section ref={ref} style={{ padding: "120px 48px", borderBottom: `1px solid ${C.border}`, position: "relative" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-        <SLabel>Asset classes</SLabel>
+        <SLabel num="03">The asset set</SLabel>
         <H2>Every security,<br/><span className="gradient-text">one protocol.</span></H2>
         <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 15, lineHeight: 1.8, color: C.muted, maxWidth: 520, marginBottom: 72 }}>
           From public equities to private fund interests, Wyvern supports the full breadth of tokenizable instruments — each with its own compliance wrapper and on-chain lifecycle.

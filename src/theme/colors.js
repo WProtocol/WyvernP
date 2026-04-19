@@ -9,6 +9,7 @@ export const C = {
   cyan: "#22d3ee",
   mint: "#10d9a0",
   rose: "#f43f5e",
+  amber: "#f4b34a",
   text: "#f0efff",
   muted: "rgba(240,239,255,0.55)",
   dim: "rgba(240,239,255,0.25)",

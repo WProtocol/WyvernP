@@ -49,7 +49,7 @@ export function StatsSection() {
   return (
     <section ref={ref} style={{ padding: "120px 48px", borderBottom: `1px solid ${C.border}`, position: "relative" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-        <SLabel>By the numbers</SLabel>
+        <SLabel num="04">The desk</SLabel>
         <H2>Scale that <span className="gradient-text">matters.</span></H2>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", border: `1px solid ${C.border}`, borderRadius: 20, overflow: "hidden", marginTop: 64, background: C.bg2 }}>
           {STATS.map((stat, i) => {

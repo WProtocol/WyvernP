@@ -25,7 +25,7 @@ export function ProtocolSection() {
   return (
     <section id="protocol" ref={ref} style={{ padding: "120px 48px", borderBottom: `1px solid ${C.border}`, position: "relative" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-        <SLabel>The Protocol</SLabel>
+        <SLabel num="01">The Protocol</SLabel>
         <H2>How <span className="gradient-text">Wyvern</span> works</H2>
         <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 15, lineHeight: 1.8, color: C.muted, maxWidth: 480, marginBottom: 72 }}>
           From real-world asset to on-chain token in four steps. No intermediaries, no T+2 delays, no borders.

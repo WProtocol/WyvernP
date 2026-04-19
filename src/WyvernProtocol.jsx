@@ -19,8 +19,12 @@ import { RoadmapSection } from "./components/landing/RoadmapSection";
 import { TrustSection } from "./components/landing/TrustSection";
 import { AboutSection } from "./components/landing/AboutSection";
 import { TeamSection } from "./components/landing/TeamSection";
+import { CompareSection } from "./components/landing/CompareSection";
+import { DashboardPreview } from "./components/landing/DashboardPreview";
+import { MainnetTerminal } from "./components/landing/MainnetTerminal";
 import { CTASection } from "./components/landing/CTASection";
 import { Footer } from "./components/landing/Footer";
+import { PullQuote } from "./components/landing/shared";
 
 export default function WyvernProtocol() {
   const [walletOpen, setWalletOpen] = useState(false);
@@ -37,9 +41,18 @@ export default function WyvernProtocol() {
       <HeroSection prices={prices} onWatchDemo={() => setDemoOpen(true)}/>
       <TickerBar prices={prices}/>
       <ProtocolSection/>
+      <PullQuote attribution="The thesis">
+        Liquidity, <em>finally</em>, untethered.
+      </PullQuote>
       <SettlementSection/>
       <FeaturesSection/>
       <SecurityTypesSection/>
+      <DashboardPreview/>
+      <CompareSection/>
+      <PullQuote attribution="What capital markets should be">
+        Trade any asset, anywhere — and have it <em>settle</em> before you've put down the phone.
+      </PullQuote>
+      <MainnetTerminal/>
       <StatsSection/>
       <AccessTiersSection/>
       <RoadmapSection/>

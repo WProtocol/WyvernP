@@ -16,7 +16,7 @@ export function AboutSection() {
     <section id="about" style={{ padding: "120px 48px", borderBottom: `1px solid ${C.border}`, background: C.bg2 }}>
       <div style={{ maxWidth: 1200, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "start" }}>
         <div>
-          <SLabel>About</SLabel>
+          <SLabel num="08">The thesis</SLabel>
           <H2>Built to <span className="gradient-text">redefine</span><br/>capital markets.</H2>
           <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 15, lineHeight: 1.9, color: C.muted, marginBottom: 24 }}>
             Wyvern Protocol is a decentralized infrastructure layer for tokenizing and trading real-world securities on Solana. We believe that any asset — from Apple stock to US Treasury bonds to private equity — should be tradeable by anyone, anywhere, without intermediaries.

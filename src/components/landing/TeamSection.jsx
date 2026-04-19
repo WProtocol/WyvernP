@@ -8,7 +8,7 @@ export function TeamSection() {
   return (
     <section ref={ref} style={{ padding: "120px 48px", borderBottom: `1px solid ${C.border}`, background: C.bg }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-        <SLabel>Team</SLabel>
+        <SLabel num="09">Who we are</SLabel>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: 64 }}>
           <H2 style={{ marginBottom: 0 }}>The people<br/><span className="gradient-text">behind the protocol.</span></H2>
           <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 14, lineHeight: 1.8, color: C.muted, maxWidth: 340, textAlign: "right" }}>

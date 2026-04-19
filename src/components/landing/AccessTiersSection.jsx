@@ -11,7 +11,7 @@ export function AccessTiersSection() {
   return (
     <section ref={ref} style={{ padding: "120px 48px", borderBottom: `1px solid ${C.border}`, background: C.bg2, position: "relative" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-        <SLabel>Access</SLabel>
+        <SLabel num="05">Three ways in</SLabel>
         <H2>Start anywhere.<br/><span className="gradient-text">Scale everywhere.</span></H2>
         <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 15, lineHeight: 1.8, color: C.muted, maxWidth: 520, marginBottom: 72 }}>
           Three tiers, one protocol. Watch the markets for free, trade with a verified wallet, or issue your own securities on Wyvern's rails.

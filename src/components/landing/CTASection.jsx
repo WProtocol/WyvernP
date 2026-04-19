@@ -2,6 +2,7 @@ import { useState } from "react";
 import { CheckCircle2, ExternalLink } from "lucide-react";
 import { C } from "../../theme/colors";
 import { TOKEN } from "../../config";
+import { Wireframe3D } from "./Wireframe3D";
 
 export function CTASection() {
   const [email, setEmail] = useState("");
@@ -9,6 +10,9 @@ export function CTASection() {
     <section style={{ padding: "160px 48px", textAlign: "center", position: "relative", overflow: "hidden" }}>
       <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: 900, height: 900, background: "radial-gradient(circle,rgba(139,127,255,0.07) 0%,rgba(34,211,238,0.03) 40%,transparent 70%)", pointerEvents: "none" }}/>
       <div className="grid-bg" style={{ position: "absolute", inset: 0, opacity: 0.3 }}/>
+      <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", zIndex: 0, opacity: 0.85, pointerEvents: "none" }}>
+        <Wireframe3D size={420} />
+      </div>
       {TOKEN.launched && (
         <div style={{ marginBottom: 32, position: "relative", zIndex: 1 }}>
           <a href={TOKEN.pumpfunUrl} target="_blank" rel="noopener noreferrer" className="btn-gradient"

@@ -21,7 +21,7 @@ export function Nav({ onSignIn }) {
         <span style={{ fontFamily: "'Syne',sans-serif", fontSize: 15, fontWeight: 700, letterSpacing: "0.05em", textTransform: "uppercase", color: C.text }}>Wyvern</span>
       </a>
       <div style={{ display: "flex", gap: 4 }}>
-        {[["Protocol", "#protocol"], ["Features", "#features"], ["Markets", "/markets"], ["About", "#about"]].map(([label, href]) => (
+        {[["Protocol", "#protocol"], ["Features", "#features"], ["Markets", "/markets"], ["Manifesto", "/manifesto"]].map(([label, href]) => (
           <a key={label} href={href.startsWith("#") ? href : undefined}
             onClick={href.startsWith("/") ? e => { e.preventDefault(); navigate(href); } : undefined}
             style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 13, color: C.muted, textDecoration: "none", padding: "8px 16px", borderRadius: 8, transition: "color 0.2s", cursor: "pointer" }}

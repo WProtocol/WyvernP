@@ -9,7 +9,7 @@ export function RoadmapSection() {
   return (
     <section ref={ref} style={{ padding: "120px 48px", borderBottom: `1px solid ${C.border}`, background: C.bg2 }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-        <SLabel>Roadmap</SLabel>
+        <SLabel num="06">The 18-month plan</SLabel>
         <H2>Where we're <span className="gradient-text">going.</span></H2>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(5,1fr)", gap: 2, marginTop: 64, border: `1px solid ${C.border}`, borderRadius: 20, overflow: "hidden" }}>
           {ROADMAP.map((phase, i) => (

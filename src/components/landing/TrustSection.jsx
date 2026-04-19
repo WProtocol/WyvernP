@@ -32,7 +32,7 @@ export function TrustSection() {
   return (
     <section ref={ref} style={{ padding: "120px 48px", borderBottom: `1px solid ${C.border}` }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-        <SLabel>Trust</SLabel>
+        <SLabel num="07">The code is the trust</SLabel>
         <H2>Trust, through <span className="gradient-text">code.</span></H2>
         <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 16, lineHeight: 1.75, color: C.muted, maxWidth: 660, marginBottom: 56 }}>
           Capital markets are the most trust-dependent industry on earth. At Wyvern, that trust doesn't come from a brand, a custodian, or a clearinghouse —

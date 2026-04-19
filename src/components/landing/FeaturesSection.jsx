@@ -16,7 +16,7 @@ export function FeaturesSection() {
   return (
     <section id="features" ref={ref} style={{ padding: "120px 48px", borderBottom: `1px solid ${C.border}`, background: C.bg2 }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-        <SLabel>Features</SLabel>
+        <SLabel num="02">What we built</SLabel>
         <H2>Built <span className="gradient-text">different.</span></H2>
         <div style={{ display: "grid", gridTemplateColumns: "340px 1fr", gap: 56, alignItems: "start", marginTop: 64 }}>
           <div style={{ border: `1px solid ${C.border}`, borderRadius: 14, overflow: "hidden" }}>

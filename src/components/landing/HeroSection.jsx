@@ -52,12 +52,28 @@ export function HeroSection({ prices, onWatchDemo }) {
             Open source
           </a>
         </div>
-        <h1 className="fade-up" style={{ fontFamily: "'Syne',sans-serif", fontSize: "clamp(50px,5.5vw,82px)", fontWeight: 800, lineHeight: 1.0, letterSpacing: "-0.03em", marginBottom: 28, animationDelay: "80ms" }}>
-          Real assets.<br/><span className="gradient-text">On-chain.</span><br/>
-          <span style={{ color: C.dim, fontWeight: 700 }}>Unchained.</span>
+        <h1
+          className="fade-up"
+          style={{
+            fontFamily: "'Instrument Serif', serif",
+            fontStyle: "italic",
+            fontWeight: 400,
+            fontSize: "clamp(60px, 6.4vw, 104px)",
+            lineHeight: 0.97,
+            letterSpacing: "-0.025em",
+            marginBottom: 28,
+            animationDelay: "80ms",
+            color: C.text,
+          }}
+        >
+          We ended <span className="gradient-text">T+2.</span>
+          <br />
+          <span style={{ fontFamily: "'Syne', sans-serif", fontStyle: "normal", fontWeight: 800, fontSize: "0.62em", letterSpacing: "-0.03em", textTransform: "uppercase", color: C.text, display: "inline-block", marginTop: 18 }}>
+            The clearing house is dead.
+          </span>
         </h1>
-        <p className="fade-up" style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 16, lineHeight: 1.8, color: C.muted, fontWeight: 300, maxWidth: 420, marginBottom: 48, animationDelay: "160ms" }}>
-          Wyvern Protocol brings stocks, bonds, and real-world securities on-chain via Solana. Trade any asset, anywhere, anytime — settled in milliseconds.
+        <p className="fade-up" style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 17, lineHeight: 1.7, color: C.muted, fontWeight: 300, maxWidth: 480, marginBottom: 48, animationDelay: "160ms" }}>
+          Stocks, bonds, and real-world assets — settled atomically on Solana in under 400 milliseconds. No broker. No counterparty. No waiting.
         </p>
         <div className="fade-up" style={{ display: "flex", gap: 12, alignItems: "center", animationDelay: "240ms" }}>
           <button className="btn-gradient" onClick={() => navigate("/app")} style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 14, fontWeight: 600, padding: "14px 28px", borderRadius: 10, border: "none", cursor: "pointer", display: "inline-flex", alignItems: "center", gap: 8, color: "#fff" }}>
