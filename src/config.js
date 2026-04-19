@@ -19,7 +19,7 @@ export const TOKEN = {
 
 export const SOCIALS = {
   twitter: "https://x.com/WyvernProtocoI",
-  github:  "https://github.com/WyvernProtocol",   // update when repo is live
+  github:  "https://github.com/WProtocol/WyvernP",
   docs:    "/docs",
 };
 

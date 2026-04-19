@@ -39,7 +39,7 @@ export function HeroSection({ prices, onWatchDemo }) {
             Solana-native · Tokenized RWA · Live
           </span>
           <a
-            href="https://github.com/WyvernProtocol"
+            href="https://github.com/WProtocol/WyvernP"
             target="_blank"
             rel="noopener noreferrer"
             style={{ display: "inline-flex", alignItems: "center", gap: 7, fontFamily: "'DM Sans',sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: C.muted, border: `1px solid ${C.border}`, borderRadius: 100, padding: "6px 14px", textDecoration: "none", transition: "all 0.2s" }}
