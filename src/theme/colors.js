@@ -1,0 +1,15 @@
+export const C = {
+  bg: "#02020c",
+  bg2: "#07071a",
+  surface: "rgba(255,255,255,0.03)",
+  border: "rgba(255,255,255,0.07)",
+  borderHi: "rgba(255,255,255,0.14)",
+  violet: "#8b7fff",
+  violetDim: "rgba(139,127,255,0.15)",
+  cyan: "#22d3ee",
+  mint: "#10d9a0",
+  rose: "#f43f5e",
+  text: "#f0efff",
+  muted: "rgba(240,239,255,0.55)",
+  dim: "rgba(240,239,255,0.25)",
+};
