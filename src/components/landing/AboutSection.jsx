@@ -1,4 +1,5 @@
 import { X, FileText } from "lucide-react";
+import { Link } from "react-router-dom";
 import { C } from "../../theme/colors";
 import { SOCIALS } from "../../config";
 import { SLabel, H2 } from "./shared";
@@ -24,18 +25,18 @@ export function AboutSection() {
           </p>
           <p style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 16, lineHeight: 1.85, color: C.muted, marginBottom: 40 }}>
             The dragon is the meme. The community is the protocol. The chart is the proof.
-            Read <a href="/manifesto" style={{ color: C.violet, textDecoration: "underline", textDecorationStyle: "dotted" }}>the manifesto</a> if you want the long version.
+            Read <Link to="/manifesto" style={{ color: C.violet, textDecoration: "underline", textDecorationStyle: "dotted" }}>the manifesto</Link> if you want the long version.
           </p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
             <a href={SOCIALS.twitter} target="_blank" rel="noopener noreferrer" className="btn-gradient"
               style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "12px 20px", borderRadius: 8, textDecoration: "none", fontFamily: "'DM Sans',sans-serif", fontSize: 13, fontWeight: 600, color: "#fff" }}>
               <X size={14}/> Follow the dragon
             </a>
-            <a href="/manifesto" style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "12px 20px", borderRadius: 8, border: `1px solid ${C.border}`, textDecoration: "none", fontFamily: "'DM Sans',sans-serif", fontSize: 13, color: C.muted, transition: "all 0.2s" }}
+            <Link to="/manifesto" style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "12px 20px", borderRadius: 8, border: `1px solid ${C.border}`, textDecoration: "none", fontFamily: "'DM Sans',sans-serif", fontSize: 13, color: C.muted, transition: "all 0.2s" }}
               onMouseEnter={e => { e.currentTarget.style.borderColor = C.borderHi; e.currentTarget.style.color = C.text; }}
               onMouseLeave={e => { e.currentTarget.style.borderColor = C.border; e.currentTarget.style.color = C.muted; }}>
               <FileText size={14}/> Read the manifesto
-            </a>
+            </Link>
           </div>
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
