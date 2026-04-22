@@ -45,7 +45,7 @@ export function CTASection() {
 
       <div style={{ display: "flex", gap: 12, justifyContent: "center", position: "relative", zIndex: 1, flexWrap: "wrap" }}>
         <a
-          href="https://t.me/+GiUlx2KOi9QwMzU0"
+          href="https://t.me/WyvernprotocoI"
           target="_blank"
           rel="noopener noreferrer"
           className="btn-gradient"

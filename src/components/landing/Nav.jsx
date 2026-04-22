@@ -45,7 +45,7 @@ export function Nav({ onSignIn }) {
           </button>
         )}
         <a
-          href="https://t.me/+GiUlx2KOi9QwMzU0"
+          href="https://t.me/WyvernprotocoI"
           target="_blank"
           rel="noopener noreferrer"
           className="btn-gradient"

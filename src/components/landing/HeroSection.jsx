@@ -72,7 +72,7 @@ export function HeroSection({ prices, onWatchDemo }) {
           $WYV is a memecoin for everyone who thinks T+2 is theft, banks are slow, and finance should belong to the people who actually use it. The dragon flies on Solana.
         </p>
         <div className="fade-up" style={{ display: "flex", gap: 12, alignItems: "center", animationDelay: "240ms", flexWrap: "wrap" }}>
-          <a href="https://t.me/+GiUlx2KOi9QwMzU0" target="_blank" rel="noopener noreferrer" className="btn-gradient" style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 14, fontWeight: 600, padding: "14px 28px", borderRadius: 10, border: "none", cursor: "pointer", display: "inline-flex", alignItems: "center", gap: 8, color: "#fff", textDecoration: "none" }}>
+          <a href="https://t.me/WyvernprotocoI" target="_blank" rel="noopener noreferrer" className="btn-gradient" style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 14, fontWeight: 600, padding: "14px 28px", borderRadius: 10, border: "none", cursor: "pointer", display: "inline-flex", alignItems: "center", gap: 8, color: "#fff", textDecoration: "none" }}>
             Join the dragons <ArrowRight size={16}/>
           </a>
           <button onClick={onWatchDemo} style={{ fontFamily: "'DM Sans',sans-serif", fontSize: 14, fontWeight: 400, color: C.muted, background: "transparent", border: `1px solid ${C.border}`, borderRadius: 10, padding: "14px 24px", cursor: "pointer", display: "inline-flex", alignItems: "center", gap: 8, transition: "all 0.2s" }}
